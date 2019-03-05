@@ -1,20 +1,16 @@
 # Clase Tienda
 class Tienda:
     # Construir tienda
-    def __init__ (self,ID_tienda,nombre_tienda,direccion_tienda,categoria,imagen_portada_tienda,contacto):
-        self.ID_tienda = ID_tienda
+    def __init__ (self,nombre_tienda,direccion_tienda,categoria,imagen_portada_tienda,contacto,ID_tienda):
         self.nombre_tienda = nombre_tienda
         self.direccion_tienda = direccion_tienda
         self.categoria = categoria
         self.imagen_portada_tienda = imagen_portada_tienda
         self.contacto = contacto
+        self.ID_tienda = ID_tienda
         print("Se ha creado la tienda",self.nombre_tienda)
-
+        
     # Editar datos de la tienda
-    def ID (self,nuevo_ID_tienda):
-        self.ID_tienda = nuevo_ID_tienda
-        print("Se ha modificado el ID de la tienda ha",nuevo_ID_tienda)
-
     def editar_nombre (self,nuevo_nombre):
         self.nombre_tienda = nuevo_nombre
         print("Se ha modificado el nombre de la tienda ha",nuevo_nombre)
@@ -30,6 +26,10 @@ class Tienda:
     def editar_imagen_portada_tienda (self,nueva_imagen_portada_tienda):
         self.imagen_portada_tienda = nueva_imagen_portada_tienda
         print("Se ha modificado la imagen de portada")
+
+    def ID (self,nuevo_ID_tienda):
+        self.ID_tienda = nuevo_ID_tienda
+        print("Se ha modificado el ID de la tienda ha",nuevo_ID_tienda)
 
     # Borrar Tienda
     def __del__(self):
@@ -54,19 +54,16 @@ class Catalogo_Tiendas:
     # Clase Productos
 
 class Producto:
-    def __init__ (self,ID_producto,nombre_producto,descripcion_producto,imagen_producto,precio_producto):
+    def __init__ (self,nombre_producto,descripcion_producto,imagen_producto,precio_producto,ID_producto,):
         self.ID_producto = ID_producto
         self.nombre_producto = nombre_producto
         self.descripcion_producto = descripcion_producto
         self.imagen_producto = imagen_producto
         self.precio_producto = precio_producto
+        self.ID_producto = ID_producto
         print("Se ha creado el producto",self.nombre_producto)
     
     # Editar Productos
-    def editar_ID_producto (self,nuevo_ID_producto):
-        self.ID_producto = nuevo_ID_producto
-        print("Se ha modificado el ID del producto ha",nuevo_ID_producto)
-
     def editar_nombre_producto (self,nuevo_nombre_producto):
         self.nombre_producto = nuevo_nombre_producto
         print("Se ha modificado el nombrel producto ha",nuevo_nombre_producto)
@@ -82,6 +79,10 @@ class Producto:
     def editar_precio_producto (self,nueva_precio_producto):
         self.precio_producto = nueva_precio_producto
         print("Se ha modificado el precio del producto a $ ",nueva_precio_producto)
+
+    def editar_ID_producto (self,nuevo_ID_producto):
+        self.ID_producto = nuevo_ID_producto
+        print("Se ha modificado el ID del producto ha",nuevo_ID_producto)
 
     # Borrar Producto
     def __del__(self):
