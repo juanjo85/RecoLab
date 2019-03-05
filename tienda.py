@@ -7,7 +7,7 @@ class Tienda:
         self.categoria = categoria
         self.imagen_portada_tienda = imagen_portada_tienda
         self.contacto = contacto
-        self.ID_tienda = Null
+        self.ID_tienda = 0
         print("Se ha creado la tienda",self.nombre_tienda)
         
     # Editar datos de la tienda
@@ -59,7 +59,7 @@ class Producto:
         self.descripcion_producto = descripcion_producto
         self.imagen_producto = imagen_producto
         self.precio_producto = precio_producto
-        self.ID_producto = Null
+        self.ID_producto = 0
         print("Se ha creado el producto",self.nombre_producto)
     
     # Editar Productos
