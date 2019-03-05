@@ -1,7 +1,7 @@
 # Clase Tienda
 class Tienda:
     # Construir tienda
-    def __init__ (self,nombre_tienda,direccion_tienda,categoria,imagen_portada_tienda,contacto,id_tienda):
+    def __init__ (self,nombre_tienda,direccion_tienda,categoria,imagen_portada_tienda,contacto,id_tienda=0):
         self.nombre_tienda = nombre_tienda
         self.direccion_tienda = direccion_tienda
         self.categoria = categoria
@@ -54,7 +54,7 @@ class Catalogo_Tiendas:
     # Clase Productos
 
 class Producto:
-    def __init__ (self,nombre_producto,descripcion_producto,imagen_producto,precio_producto,id_producto,):
+    def __init__ (self,nombre_producto,descripcion_producto,imagen_producto,precio_producto,id_producto=0):
         self.nombre_producto = nombre_producto
         self.descripcion_producto = descripcion_producto
         self.imagen_producto = imagen_producto
